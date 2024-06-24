@@ -3,13 +3,15 @@ package org.elb.controllers;
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
-@RestController("consumer/mgmt")
+@RestController
+@RequestMapping("/consumer/mgmt")
 public class ConsumerController {
 
 
