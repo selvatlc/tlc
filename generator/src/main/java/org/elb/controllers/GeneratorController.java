@@ -32,7 +32,7 @@ public class GeneratorController {
         return response;
     }
 
-    @PostMapping("/set-cookie")
+    @GetMapping("/set-cookie")
     public Map<String, String> setCookie(@RequestParam("value") final String value, final HttpServletResponse response) {
         final Cookie cookie = new Cookie("myCookie", "Secure - " + value);
         cookie.setPath("/");
